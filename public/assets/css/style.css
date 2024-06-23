@@ -9661,7 +9661,7 @@ h6 {
 .getstarted-wrap {
   display: flex;
   flex-direction: column;
-  min-height: 968px;
+  min-height: 1000px;
   background: transparent linear-gradient(128deg, #754400 0%, #333354 100%) 0% 0% no-repeat padding-box;
 }
 
@@ -9792,4 +9792,20 @@ h6 {
   to {
     top: -600px;
   }
+}
+
+.company-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  margin-top: 16px;
+}
+
+.form-select {
+  width: 382px;
+  height: 37px;
+  border: none;
+  margin-top: 16px;
 }

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { InputGroup, Form, DropdownButton, Dropdown, Button } from 'react-bootstrap';
+import { InputGroup, DropdownButton, Dropdown, Button, Option } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 import { useHistory } from 'react-router-dom';
 
-const RegisterCompany = () => {
+const RegisterAWSInfo = () => {
   const [mybubbles, setMybubbles] = useState(document.getElementsByClassName('ani-bubble'));
   // const mybubbles = document.getElementsByClassName('ani-bubble');
   const bubblecolors = ['#c5a5ab', '#e3e2dd', '#87a6c0'];
@@ -75,37 +76,25 @@ const RegisterCompany = () => {
             <div className="registerCompany-cont__form-inputs">
               <Form className="company-form">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Company Registration Number</Form.Label>
-                  <Form.Control type="email" placeholder="123-45-67890" />
+                  <Form.Label>AWS Account</Form.Label>
+                  <Form.Control type="text" placeholder="33301934" />
                   {/* <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text> */}
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Company Name</Form.Label>
-                  <Form.Control type="email" placeholder="company name" />
+                  <Form.Label>AWS Account Type</Form.Label>
+                  <Form.Control type="text" placeholder="dev or staging or production" />
                   {/* <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text> */}
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Contact Person</Form.Label>
-                  <Form.Control type="email" placeholder="Name" />
-                  {/* <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text> */}
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Contact Phone</Form.Label>
-                  <Form.Control type="email" placeholder="010-0000-0000" />
-                  {/* <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text> */}
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Contact Email</Form.Label>
-                  <Form.Control type="email" placeholder="username@xxx.com" />
+                  <Form.Label>AWS Regions</Form.Label>
+                  <Form.Control type="text" placeholder="Seoul" />
                   {/* <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text> */}
                 </Form.Group>
 
                 <Button className="submit-btn" variant="secondary" type="submit" onClick={onSubmit}>
-                  NEXT
+                  SUBMIT
                 </Button>
               </Form>
             </div>
@@ -116,4 +105,4 @@ const RegisterCompany = () => {
   );
 };
 
-export default RegisterCompany;
+export default RegisterAWSInfo;
